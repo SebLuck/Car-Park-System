@@ -234,7 +234,7 @@ different vehicle number.*/
             std::string sTimeInHr;
             std::string sTimeInMin; 
             std::string sTimeInSec;
-            std::cout << "Enter the time the vehicle enter the car park. " <<
+            std::cout << "Enter the time the vehicle entered the car park. " <<
             "Enter hours, minutes and seconds respectively: " << std::endl;
             std::cin >> sTimeInHr >> sTimeInMin >> sTimeInSec;
             
@@ -283,7 +283,7 @@ different vehicle number.*/
         int error = 0;
         // If the user chooses option 2
         if(menu_number == "2"){
-            std::cout << "Enter the vehicle number which is leaving: "
+            std::cout << "Enter the vehicle number that is leaving.: "
             << std::endl;
             std::cin >> vehicleNumberExit;
 
@@ -300,7 +300,7 @@ vehicleEnterDetails*/
                     std::string sTimeOutHr;
                     std::string sTimeOutMin; 
                     std::string sTimeOutSec;
-                    std::cout << "Enter the time the vehicle exit the " << 
+                    std::cout << "Enter the time the vehicle exited the " << 
                     "car park. Enter hours, minutes and seconds " << 
                     "respectively: " << std::endl;
                     std::cin >> sTimeOutHr >> sTimeOutMin >> sTimeOutSec;
@@ -444,8 +444,8 @@ The date of the vehicle that left the car park has to be equal to the date
             /* This if statement is when the user entered a date where the
              vehicle has not left the car park yet.*/
             if (error_date == sizeHistory){
-                std::cout << "Error. There is no vehicle which has left the car"
-                << " park on this date." << std::endl;
+                std::cout << "Error. There is no vehicle that has left the"
+			<< " car park on this date." << std::endl;
             }
             
         }
